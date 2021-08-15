@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap" rel="stylesheet">
+    <title>gym website</title>
+    <style>
+        body {
+            background-size: cover;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Baloo Chettan 2', cursive;
+            background-image: url("img/firnes1.jpeg");
+            background-repeat: no-repeat;
+        }
+        .container{
+            box-sizing: border-box;
+            /* border: 2px solid green; */
+        }
+
+        .left {
+            box-sizing: border-box;
+            
+          position: absolute;
+           left:  10px;
+           display: inline-block;
+            color: honeydew;
+           top:1px;
+
+        }
+        .left img{
+
+            /* filter: invert(100%);  */
+            width: 105px;
+            
+    
+        }
+         /* mid sectiom */
+        .mid {
+            display: block;
+            width: 40%;
+            margin: 7px auto;
+            color: rgb(61, 126, 61);
+
+        }
+
+        .navbar {
+            position: relative;
+            display: inline-block;
+
+        }
+
+       .navbar li {
+            display: inline-block;
+            font-size: 18px;
+            
+            
+        }
+
+        .navbar li a {
+            cursor: pointer;
+            color: rgb(247, 244, 240);
+            text-decoration: none;
+            padding: 18px 23px;
+
+        }
+        .navbar li a:hover,.navbar li a:active{
+            text-decoration: underline;
+            color: gray;
+        }
+        /* right section */
+
+        .right {
+           
+            right: 140px;
+            position: absolute;
+           display: inline-block;
+            top: 23px;
+            color: hotpink;
+
+        }
+        .btn{
+            font-family: 'Baloo Chettan 2', cursive;
+            cursor: pointer;
+            color: white;
+            font-size: 15px;
+            padding: 5px 14px;
+            margin: 0px 9px;
+            border-radius: 10px;
+            background-color: black;
+        }
+        .btn:hover{
+            background-color: rgb(48, 43, 43);
+        }
+        .container-1{
+             font-family: 'Baloo Chettan 2', cursive;
+            border: 2px solid rgb(236, 235, 235);
+            margin: 106px 80px;
+            width: 37%;
+            padding: 75px;
+            border-radius: 20px;
+           
+
+        }
+        .form-group{
+            display: inline-block;
+           
+           
+            font-size: 12px;
+        }
+        .form-group input{
+            cursor: pointer;
+            font-family: 'Baloo Chettan 2', cursive;
+            width: 100%;
+            display: block;
+            margin: 7px 2px;
+            padding: 7px 50px;
+        }
+        .container-1 h1{
+            color: white;
+        }
+        .container-1 button{
+            display: block;
+            margin:  12px auto ;
+            width: 84%;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <header class="header">
+        <div class="left">
+             <img src="img\img2.jpeg" alt="">
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="copy.html">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+        <button class="btn">Email Us </button>
+           
+        </div>
+    </header>
+    </div>
+    <div class="container-1">
+        <h1>Insert Your Detail For Contact Us </h1>
+        <form action=" action.py" class="form-group">
+            <input type="text" class="from-group" placeholder="Enter your Name">
+            <input type="text" class="from-group" placeholder="Enter Your Age">
+            <input type="text" class="from-group" placeholder="Enter your Gender">
+            <input type="text" class="from-group" placeholder="Enter your Location">
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
